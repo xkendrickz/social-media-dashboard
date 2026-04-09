@@ -46,7 +46,7 @@ export default function PlatformCard({
       </div>
 
       <div className="space-y-2">
-        {data.contents.map((content) => (
+        {(data.contents ?? []).map((content) => (
           <a
             key={content.id}
             href={content.url}
